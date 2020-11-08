@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio unidad 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="login-form" action="/action_page.php" method="post">
+
+        <div class="container">
+            <h3>Ingreso al sistema</h3>
+            <label for="uname"><b>Usuario:</b></label>
+            <input type="text" id="input-uname" placeholder="Ingresa tu usuario" name="uname" required>
+            <br/><br/>
+    
+            <label for="psw"><b>Clave:</b></label>
+            <input type="password" id="input-psw" placeholder="Ingresa tu clave" name="psw" required>
+            <br/><br/>
+
+            <button type="submit" id ="submit" onclick="validate()">Ingresar</button>
+        </div>
+    </form>
+    <br/>
+    <div id="mensajeEstado"></div>
+    <script src="control.js"></script>
+</body>
+</html>
